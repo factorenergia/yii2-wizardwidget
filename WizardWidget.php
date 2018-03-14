@@ -4,7 +4,7 @@
  * @package yii2-wizardwidget
  * @version 1.0.0
  */
-namespace drsdre\wizardwidget;
+namespace factorenergia\wizardwidget;
 
 use yii;
 use yii\base\Widget;
@@ -93,7 +93,8 @@ class WizardWidget extends Widget {
 				array_merge(
 					[
 						'role' => 'presentation',
-						'class' => $class,
+                        'class' => [$class, 'circle-steps'],
+                        'id'=>'li-step-'.$id,
 						'style' => ['width' => $wizard_line_distribution.'%']
 					],
 					isset($step['options']) ? $step['options'] : []

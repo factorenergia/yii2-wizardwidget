@@ -65,5 +65,5 @@ function nextTab(elem) {
 
 // 'click' on prev tab
 function prevTab(elem) {
-    $(elem).prev().find('a[data-toggle="tab"]').click();
+    $(elem).prevAll('li:not(.disabled)').find('a[data-toggle="tab"]').click();
 }
