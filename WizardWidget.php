@@ -118,7 +118,7 @@ class WizardWidget extends Widget {
 			}
 			if ($id == $last_id) {
 				// Show save button on last step
-                $buttons[] = Html::button('Enviar', ['class'=> 'save-reclamacion btn']);
+                $buttons[] = Html::button('Enviar', ['class'=> 'save-wizard-forms btn']);
 			} else {
 				// On all previous steps show next button
 				$buttons[] = $this->navButton('next', $step, $button_id);
